@@ -96,7 +96,11 @@
             document.getElementById("wind_speed").innerText = "Wind Speed: "+speed;
         }).catch(error=>{
                 // If fails
+                document.getElementById("city_temp").innerText ="Temperature: --"
                 document.getElementById("city_name").innerText =`${city} not found!!!`;
+                document.getElementById("city_humidity").innerText ="Humidity: --";
+                document.getElementById("wind_speed").innerText = "Wind Speed: --";
+                
         });
     }
     </script>
